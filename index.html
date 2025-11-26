@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stray Kids</title> 
+    <title>Stray Kids</title>
 
     <style>
       @font-face {
@@ -23,7 +23,6 @@
         background-repeat: no-repeat;
       }
 
-
       h1 {
         color: #a30202;
         width: 1000px;
@@ -33,34 +32,13 @@
         font-size: 72px;
         font-family: "JustMeAgain", sans-serif;
         text-align: center;
-        background-image: url("Screenshot 2025-11-25 at 1.36.32 PM.png");
+        background-image: url("Screenshot 2025-11-25 at 1.36.32 PM.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
       }
 
-      /* YouTube Video */
-      .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 960px;
-        margin: 20px auto;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        border-radius: 10px;
-      }
-
-      .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-
+      /* NAV */
       ul {
         list-style-type: none;
         margin: 0;
@@ -83,16 +61,6 @@
         background-color: #525252;
         color: #fff;
         border-radius: 10px;
-      }
-
-      .container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        padding: 10px;
-        margin-bottom: 40px;
-
-
       }
 
       .logo-container {
@@ -134,19 +102,71 @@
         border-radius: 6px;
       }
 
-      .paragraph p {
+      .section-title {
+        font-size: 72px;
         color: #000;
-        width: 960px;
-        height: 100px;
-        border-radius: 10px;
-        font-family: "Oswald", sans-serif;
+        font-family: "JustMeAgain", sans-serif;
+        margin: 10px 0 20px 0;
         text-align: center;
-        background-image: url("Screenshot 2025-11-25 at 2.12.05 PM.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border: 8px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
 
+      .section-title .red-text {
+        color: #a30202;
+      }
+
+      .section-title img {
+        height: 120px;
+        width: auto;
+      }
+
+      .trending-video {
+        max-width: 980px;
+        margin: 0 auto 40px auto;
+        position: relative;
+        padding-bottom: 55.125%; /* 16:9 ratio for 980px width */
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .trending-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* VIDEO GRID (supports 16 videos) */
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 960px;
+        margin: 40px auto;
+      }
+
+      .video-box {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .video-box iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
       }
 
       footer {
@@ -165,35 +185,135 @@
         <div class="logo-container">
           <img src="photo1.png" alt="title page">
         </div>
+
         <ul class="navli-container">
-
           <ul>
-              <li><a href="https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
-              <li><a href=" https://izzydipasta-ctrl.github.io/Menu/">MEMBERS</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/About/ ">SONGS</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
-
+            <li><a href="https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
+            <li><a href="https://izzydipasta-ctrl.github.io/Members/">MEMBERS</a></li>
+            <li><a href="https://izzydipasta-ctrl.github.io/About/">SONGS</a></li>
+            <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
           </ul>
+        </ul>
       </nav>
+    </nav>
 
-      <h1 id="site-title">Meet the Strays</h1>
+    <!-- TRENDING VIDEO -->
+    <h2 class="section-title">
+      <img src="124ygfeds.png" alt="stars">
+      Trending:
+      <img src="124ygfeds.png" alt="stars">
+    </h2>
+    <div class="trending-video">
+      <iframe src="https://www.youtube.com/embed/NED7nev2ywQ"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
 
-      <div class="paragraph">
-        <p>
-          Stray Kids is a South Korean boy group formed by JYP Entertainment in 2017. Known for their powerful performances, self-produced music, and authentic lyrics, the group inspires fans worldwide with messages about individuality, resilience, and self-discovery. With members contributing to songwriting, composing, and producing, Stray Kids has built a unique sound that blends energetic hip-hop, electronic, and rock influences. Their fandom, called STAY, plays a huge role in their journey — representing the idea that Stray Kids and STAY always “stay” together through every challenge and success.
-        </p>
+    <!-- VIDEO SECTION — 16 VIDEOS -->
+    <h2 class="section-title">
+      <img src="124ygfeds.png" alt="stars">
+      The <span class="red-text">SKZ</span> Cinema
+      <img src="124ygfeds.png" alt="stars">
+    </h2>
+    <div class="video-grid">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/Fpgd3ac3_nM"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
-      <!-- YouTube video -->
-      <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/NED7nev2ywQ?start=3" title="Straykidssong" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/ovHoY8UBIu8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
 
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/Dab4EENTW5I"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
-      <footer>
-          
-      </footer>
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/P7vBoGWoReg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/TQTlCHxyuu8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/EaswWiwMVs8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/AdfIfFGCqgo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/5rPluw_-Eb4"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/5ojJxG9XZmYJTv_i"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_11"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_12"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_13"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_14"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_15"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_16"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <footer></footer>
 
   </body>
 </html>
